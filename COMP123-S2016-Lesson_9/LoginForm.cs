@@ -7,11 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace COMP123_S2016_Lesson_9
 {
     public partial class LoginForm : Form
     {
+        /**
+         * <summary>
+         * This is the default constructor 
+         * </summary>
+         * 
+         * @constructor LoginForm
+        */
         public LoginForm()
         {
             InitializeComponent();
@@ -41,10 +49,27 @@ namespace COMP123_S2016_Lesson_9
         {
 
         }
+        private void _clearForm()
+        {
+            UsernameTextBox.Clear();
+            PasswordTextBox.Clear();
+        }
 
+        /**
+         * <summary>
+         * This is the LoginButton Click event handler 
+         * </summary>
+         * 
+         * @private
+         * @method button1_Click
+         * @param {object} sender
+         * @param
+        */
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Debug.WriteLine("Username"+UsernameTextBox.Text);
+            Debug.WriteLine("Password" + PasswordTextBox.Text);
+            this._clearForm();
         }
     }
 }

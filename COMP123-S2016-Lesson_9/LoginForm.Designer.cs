@@ -33,14 +33,13 @@
             this.PasswordTextBox = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
             this.LoginButton = new System.Windows.Forms.Button();
-            this.PleaseLoginLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // UsernameLabel
             // 
             this.UsernameLabel.AutoSize = true;
             this.UsernameLabel.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.Location = new System.Drawing.Point(30, 90);
+            this.UsernameLabel.Location = new System.Drawing.Point(15, 9);
             this.UsernameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(160, 42);
@@ -51,7 +50,7 @@
             // UsernameTextBox
             // 
             this.UsernameTextBox.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTextBox.Location = new System.Drawing.Point(37, 150);
+            this.UsernameTextBox.Location = new System.Drawing.Point(15, 69);
             this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.Size = new System.Drawing.Size(370, 48);
@@ -61,7 +60,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox.Location = new System.Drawing.Point(37, 263);
+            this.PasswordTextBox.Location = new System.Drawing.Point(15, 182);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.PasswordChar = '@';
@@ -73,7 +72,7 @@
             // 
             this.PasswordLabel.AutoSize = true;
             this.PasswordLabel.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(30, 206);
+            this.PasswordLabel.Location = new System.Drawing.Point(15, 125);
             this.PasswordLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(153, 42);
@@ -83,29 +82,19 @@
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(219, 381);
+            this.LoginButton.Location = new System.Drawing.Point(177, 289);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(188, 48);
+            this.LoginButton.Size = new System.Drawing.Size(208, 57);
             this.LoginButton.TabIndex = 4;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // PleaseLoginLabel
-            // 
-            this.PleaseLoginLabel.AutoSize = true;
-            this.PleaseLoginLabel.Location = new System.Drawing.Point(30, 24);
-            this.PleaseLoginLabel.Name = "PleaseLoginLabel";
-            this.PleaseLoginLabel.Size = new System.Drawing.Size(192, 42);
-            this.PleaseLoginLabel.TabIndex = 5;
-            this.PleaseLoginLabel.Text = "Please Login";
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 486);
-            this.Controls.Add(this.PleaseLoginLabel);
+            this.ClientSize = new System.Drawing.Size(432, 403);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.PasswordLabel);
@@ -128,6 +117,5 @@
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Button LoginButton;
-        private System.Windows.Forms.Label PleaseLoginLabel;
     }
 }
